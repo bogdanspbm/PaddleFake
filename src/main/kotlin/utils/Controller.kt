@@ -10,5 +10,6 @@ class Controller {
 
     fun start() {
         var fileContent = fileReader.getFileContent("fake.yaml")
+        var tree = parser.parse(fileContent)
     }
 }
