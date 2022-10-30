@@ -57,9 +57,7 @@ class Controller {
                 if (!commandMap.get(dependCmd.name)!!.getExecuted()) {
                     throw DependencyException("Can't complete dependency: " + dependCmd.name)
                 }
-            }
-
-            if (!File(depend).exists()) {
+            } else if (!File(depend).exists()) {
                 throw DependencyException("Can't complete dependency: " + depend)
             }
         }
