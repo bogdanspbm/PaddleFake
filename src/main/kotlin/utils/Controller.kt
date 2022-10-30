@@ -15,10 +15,10 @@ class Controller {
     var commandMap = HashMap<String, Command>()
 
 
-    fun start() {
+    fun start(path : String) {
         commandMap = HashMap<String, Command>()
 
-        var fileContent = fileReader.getFileContent("fake.yaml")
+        var fileContent = fileReader.getFileContent(path)
         var commands = parser.parse(fileContent)
 
 
