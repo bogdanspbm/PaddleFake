@@ -4,7 +4,9 @@ import exception.DependencyException
 import exception.DependencyLoopException
 import exception.UniqueCommandException
 import objects.Command
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
 
 class Controller {
 
@@ -65,7 +67,6 @@ class Controller {
         if (!File(cmd.target).exists()) {
             var proc = Runtime.getRuntime().exec(cmd.run)
             System.out.println(cmd.run)
-            System.out.println(proc.outputStream.toString())
         }
 
 
