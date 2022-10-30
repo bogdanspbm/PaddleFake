@@ -65,5 +65,7 @@ class Controller {
         if (!File(cmd.target).exists()) {
             Runtime.getRuntime().exec(cmd.run)
         }
+
+        cmd.setExecuted()
     }
 }
