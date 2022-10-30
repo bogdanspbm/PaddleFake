@@ -14,6 +14,8 @@ class Controller {
 
 
     fun start() {
+        commandMap = HashMap<String, Command>()
+
         var fileContent = fileReader.getFileContent("fake.yaml")
         var commands = parser.parse(fileContent)
 
@@ -29,7 +31,7 @@ class Controller {
 
         // Execute commands
         commands.forEach {
-            if (!it.getExecuted()) {
+            if (!commandMap.get(it.name)!!.getExecuted()) {
                 executeCommand(it, ArrayList())
             }
         }
@@ -46,13 +48,13 @@ class Controller {
 
             if (commandMap.contains(depend)) {
                 var dependCmd = commandMap.get(depend)
-                if (!dependCmd!!.getExecuted()) {
+                if (!commandMap.get(dependCmd!!.name)!!.getExecuted()) {
                     var nextHistory = history.toMutableList()
                     nextHistory.add(cmd.name)
                     executeCommand(dependCmd, nextHistory)
                 }
 
-                if (!dependCmd.getExecuted()) {
+                if (!commandMap.get(dependCmd.name)!!.getExecuted()) {
                     throw DependencyException("Can't complete dependency: " + dependCmd.name)
                 }
             }
@@ -66,6 +68,7 @@ class Controller {
             Runtime.getRuntime().exec(cmd.run)
         }
 
-        cmd.setExecuted()
+
+        commandMap.get(cmd.name)!!.setExecuted()
     }
 }
