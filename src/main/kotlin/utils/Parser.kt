@@ -9,7 +9,7 @@ class Parser {
     fun parse(lines: List<String>): List<Command> {
         var res = ArrayList<Command>()
         var lastCommand: Command? = null
-
+        var lastModule: String = ""
 
         lines.forEach {
             var line = it
@@ -20,23 +20,54 @@ class Parser {
                     res.add(lastCommand!!)
                 }
 
-                lastCommand = Command(line)
+                lastCommand = Command(line.replace(":", ""))
             } else if (isCommandModule(line)) {
+
+                if (!extractModule(line).equals("")) {
+                    lastModule = extractModule(line)
+                }
+
                 when (extractModule(line)) {
                     "dependencies" -> {
 
                     }
 
                     "target" -> {
-
+                        var parts = line.split(":")
+                        if (parts.size > 1) {
+                            var target = parts[1].trim()
+                            lastCommand!!.target = target
+                        } else {
+                            throw UnexpectedLineException("Bad line: " + line)
+                        }
                     }
 
                     "run" -> {
+                        var parts = line.split(":")
+                        if (parts.size > 1) {
+                            var run = parts[1].trim()
+                            lastCommand!!.run = run
+                        } else {
+                            throw UnexpectedLineException("Bad line: " + line)
+                        }
+                    }
 
+                    "" -> {
+                        if (lastModule.equals("dependencies")) {
+                            var parts = line.split("-")
+                            if (parts.size > 1) {
+                                var depend = parts[1].trim()
+                                lastCommand!!.dependencies.add(depend)
+                            } else {
+                                throw UnexpectedLineException("Bad line: " + line)
+                            }
+                        }
                     }
                 }
             }
         }
+
+        res.add(lastCommand!!)
 
         return res
     }
@@ -74,7 +105,15 @@ class Parser {
             return false
         }
 
-        if (line.startsWith("/t")) {
+        if (line.startsWith("\t")) {
+            return false
+        }
+
+        if (line.startsWith("\n")) {
+            return false
+        }
+
+        if (line.equals("")) {
             return false
         }
 
