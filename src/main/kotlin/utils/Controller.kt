@@ -63,7 +63,9 @@ class Controller {
         }
 
         if (!File(cmd.target).exists()) {
-            Runtime.getRuntime().exec(cmd.run)
+            var proc = Runtime.getRuntime().exec(cmd.run)
+            System.out.println(cmd.run)
+            System.out.println(proc.outputStream.toString())
         }
 
 
