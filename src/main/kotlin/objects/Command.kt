@@ -6,6 +6,8 @@ class Command {
     var target: String = ""
     var run: String = ""
 
+    private var executed: Boolean = false
+
     constructor(name: String) {
         this.name = name
     }
@@ -19,6 +21,14 @@ class Command {
         res += "\ttarget: " + target + "\n"
         res += "\trun: " + run + "\n"
         return res
+    }
+
+    fun setExecuted() {
+        executed = true
+    }
+
+    fun getExecuted(): Boolean {
+        return executed
     }
 
 
