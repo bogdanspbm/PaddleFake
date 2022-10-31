@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="25974aa4-8882-4e18-b9cb-4d1b00127fe3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Controller.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Parser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/FakeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FakeTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FakeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/FakeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FakeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-FakeTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Projects/system_architecture/Homework/CLI/CLI",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/system_architecture/Homework/CLI/CLI&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FakeTest (5)">
+  <component name="RunManager" selected="Kotlin.Application">
     <configuration name="FakeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PaddleFake" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,11 +91,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FakeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="PaddleFake" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FakeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,16 +113,16 @@
       <item itemvalue="JUnit.FakeTest (3)" />
       <item itemvalue="JUnit.FakeTest (4)" />
       <item itemvalue="JUnit.FakeTest (1)" />
-      <item itemvalue="JUnit.FakeTest" />
       <item itemvalue="JUnit.FakeTest (5)" />
+      <item itemvalue="Kotlin.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Application" />
         <item itemvalue="JUnit.FakeTest (5)" />
         <item itemvalue="JUnit.FakeTest (4)" />
         <item itemvalue="JUnit.FakeTest (3)" />
         <item itemvalue="JUnit.FakeTest (1)" />
-        <item itemvalue="JUnit.FakeTest" />
       </list>
     </recent_temporary>
   </component>

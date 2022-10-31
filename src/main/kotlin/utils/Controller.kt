@@ -37,7 +37,7 @@ class Controller {
         }
 
         // Execute commands
-        if (args == null || args.size == 0) {
+        if (args == null || args.size <= 1) {
             commands.forEach {
                 if (!commandMap.get(it.name)!!.getExecuted()) {
                     executeCommand(it, ArrayList())
@@ -45,7 +45,7 @@ class Controller {
             }
         } else {
             args.forEach {
-                if (commandMap.get(it) != null && !commandMap.get(it)!!.getExecuted()) {
+                if (commandMap.containsKey(it) && commandMap.get(it) != null && !commandMap.get(it)!!.getExecuted()) {
                     executeCommand(commandMap.get(it)!!, ArrayList())
                 }
             }

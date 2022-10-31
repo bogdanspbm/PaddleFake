@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="FakeTest" time="0.057" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="FakeTest" time="0.052" errors="0" skipped="0">
   <properties>
     <property name="idea.plugins.compatible.build" value="999.SNAPSHOT"/>
     <property name="idea.version" value="2022.2.1"/>
@@ -68,6 +68,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="FakeTest" name="testExecuteTask" time="0.056"/>
+  <testcase classname="FakeTest" name="testExecuteTask" time="0.037"/>
   <testcase classname="FakeTest" name="testCloneTask" time="0.001"/>
+  <testcase classname="FakeTest" name="testLoopDependecyTask" time="0.011"/>
+  <testcase classname="FakeTest" name="testDependencyTask" time="0.002"/>
+  <testcase classname="FakeTest" name="testBadLine" time="0.001"/>
 </testsuite>
