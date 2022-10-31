@@ -61,6 +61,8 @@ class Parser {
                             } else {
                                 throw UnexpectedLineException("Bad line: " + line)
                             }
+                        } else if (!line.trim().equals("") && !line.trim().equals("\n")){
+                            throw UnexpectedLineException("Bad line: " + line)
                         }
                     }
                 }

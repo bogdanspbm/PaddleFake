@@ -1,0 +1,7 @@
+compile:
+	dependencies:
+		- build
+	target: test.o
+	run: gcc -c main.c -o test.o
+
+    
