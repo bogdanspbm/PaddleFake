@@ -31,6 +31,11 @@ class Controller {
             }
         }
 
+        // Clear Before
+        if (commandMap.containsKey("clean") || (args != null && args.contains("clean"))) {
+            executeClean()
+        }
+
         // Execute commands
         if (args == null || args.size == 0) {
             commands.forEach {
@@ -44,6 +49,19 @@ class Controller {
                     executeCommand(commandMap.get(it)!!, ArrayList())
                 }
             }
+        }
+    }
+
+    private fun executeClean() {
+        commandMap.forEach {
+            var file = it.value.target
+            if (File(file).exists()) {
+                File(file).delete()
+            }
+        }
+
+        if (commandMap.containsKey("clean")) {
+            commandMap.get("clean")!!.setExecuted()
         }
     }
 
