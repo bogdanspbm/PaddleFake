@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="FakeTest" time="0.035" errors="0" skipped="0">
+  <properties>
+    <property name="idea.plugins.compatible.build" value="999.SNAPSHOT"/>
+    <property name="idea.version" value="2022.2.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.4.1+9-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Users\crewd\.jdks\corretto-17.0.4.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Projects\PaddleFake"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Projects\PaddleFake"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.4.1+9-LTS"/>
+    <property name="idea.io.use.nio2" value="true"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\crewd\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="ide.hide.excluded.files" value="false"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\crewd\.jdks\corretto-17.0.4.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Programs\PuTTY\;C:\Program Files\Java\jdk-18.0.2.1\bin\;C:\Users\crewd\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\crewd\AppData\Local\Programs\Python\Python310\;C:\Users\crewd\AppData\Local\Microsoft\WindowsApps;C:\Users\crewd\AppData\Local\GitHubDesktop\bin;C:\Users\crewd\AppData\Local\JetBrains\Toolbox\scripts;D:\Programs\MikTex\miktex\bin\x64\;C:\Program Files\Java\jdk-18.0.1.1\bin;;."/>
+    <property name="psi.track.invalidation" value="true"/>
+    <property name="maven.conf" value="C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="project.structure.add.tools.jar.to.new.jdk" value="false"/>
+    <property name="os.version" value="10.0"/>
+    <property name="psi.incremental.reparse.depth.limit" value="1000"/>
+    <property name="user.home" value="C:\Users\crewd"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="crewd"/>
+    <property name="java.class.path" value="C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.2 package"/>
+    <property name="java.home" value="C:\Users\crewd\.jdks\corretto-17.0.4.1"/>
+    <property name="ast.loading.filter" value="false"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="C:\Users\crewd\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4167.29\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-08-12"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Corretto-17.0.4.9.1"/>
+    <property name="idea.ignore.disabled.plugins" value="true"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="FakeTest" name="testCloneTask" time="0.035"/>
+</testsuite>
