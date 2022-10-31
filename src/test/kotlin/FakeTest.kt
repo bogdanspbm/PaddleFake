@@ -10,7 +10,7 @@ class FakeTest {
     fun testCloneTask() {
         var controller = Controller()
         try {
-            controller.start("files/testA.yaml")
+            controller.scan("files/testA.yaml", null)
         } catch (e: UniqueCommandException) {
             return
         }
@@ -22,7 +22,7 @@ class FakeTest {
     fun testExecuteTask() {
         var controller = Controller()
         try {
-            controller.start("files/testB.yaml")
+            controller.scan("files/testB.yaml", null)
         } catch (e: ExecuteException) {
             return
         }

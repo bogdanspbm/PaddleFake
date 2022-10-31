@@ -27,6 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Projects/system_architecture/Homework/CLI/CLI",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -38,16 +39,7 @@
       <recent name="exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FakeTest (4)">
-    <configuration name="FakeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PaddleFake" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FakeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FakeTest">
     <configuration name="FakeTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PaddleFake" />
       <option name="PACKAGE_NAME" value="" />
@@ -67,6 +59,15 @@
       </method>
     </configuration>
     <configuration name="FakeTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PaddleFake" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FakeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeTest (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PaddleFake" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FakeTest" />
@@ -115,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FakeTest" />
+        <item itemvalue="JUnit.FakeTest (5)" />
         <item itemvalue="JUnit.FakeTest (4)" />
         <item itemvalue="JUnit.FakeTest (3)" />
         <item itemvalue="JUnit.FakeTest (2)" />
-        <item itemvalue="JUnit.FakeTest (1)" />
-        <item itemvalue="JUnit.FakeTests (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667211398537</updated>
       <workItem from="1667211399811" duration="107000" />
-      <workItem from="1667211516354" duration="866000" />
+      <workItem from="1667211516354" duration="2103000" />
     </task>
     <servers />
   </component>

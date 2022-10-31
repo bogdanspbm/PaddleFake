@@ -5,9 +5,8 @@ import exception.DependencyLoopException
 import exception.ExecuteException
 import exception.UniqueCommandException
 import objects.Command
-import java.io.BufferedReader
 import java.io.File
-import java.io.InputStreamReader
+import java.util.*
 
 class Controller {
 
@@ -16,7 +15,7 @@ class Controller {
     var commandMap = HashMap<String, Command>()
 
 
-    fun start(path: String) {
+    fun scan(path: String, args: Array<String>?) {
         commandMap = HashMap<String, Command>()
 
         var fileContent = fileReader.getFileContent(path)
@@ -33,9 +32,17 @@ class Controller {
         }
 
         // Execute commands
-        commands.forEach {
-            if (!commandMap.get(it.name)!!.getExecuted()) {
-                executeCommand(it, ArrayList())
+        if (args == null || args.size == 0) {
+            commands.forEach {
+                if (!commandMap.get(it.name)!!.getExecuted()) {
+                    executeCommand(it, ArrayList())
+                }
+            }
+        } else {
+            args.forEach {
+                if (commandMap.get(it) != null && !commandMap.get(it)!!.getExecuted()) {
+                    executeCommand(commandMap.get(it)!!, ArrayList())
+                }
             }
         }
     }
