@@ -2,6 +2,7 @@ package utils
 
 import exception.DependencyException
 import exception.DependencyLoopException
+import exception.ExecuteException
 import exception.UniqueCommandException
 import objects.Command
 import java.io.BufferedReader
@@ -15,7 +16,7 @@ class Controller {
     var commandMap = HashMap<String, Command>()
 
 
-    fun start(path : String) {
+    fun start(path: String) {
         commandMap = HashMap<String, Command>()
 
         var fileContent = fileReader.getFileContent(path)
@@ -64,12 +65,14 @@ class Controller {
             }
         }
 
-        if (!File(cmd.target).exists()) {
-            var proc = Runtime.getRuntime().exec(cmd.run)
-            System.out.println(cmd.run)
+        try {
+            if (!File(cmd.target).exists()) {
+                var proc = Runtime.getRuntime().exec(cmd.run)
+                System.out.println(cmd.run)
+            }
+            commandMap.get(cmd.name)!!.setExecuted()
+        } catch (e: Exception) {
+            throw ExecuteException("Can't execute command: " + cmd.run)
         }
-
-
-        commandMap.get(cmd.name)!!.setExecuted()
     }
 }

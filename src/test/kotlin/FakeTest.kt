@@ -1,3 +1,4 @@
+import exception.ExecuteException
 import exception.UniqueCommandException
 import org.junit.Test
 
@@ -11,6 +12,18 @@ class FakeTest {
         try {
             controller.start("files/testA.yaml")
         } catch (e: UniqueCommandException) {
+            return
+        }
+
+        assert(false)
+    }
+
+    @Test
+    fun testExecuteTask() {
+        var controller = Controller()
+        try {
+            controller.start("files/testB.yaml")
+        } catch (e: ExecuteException) {
             return
         }
 

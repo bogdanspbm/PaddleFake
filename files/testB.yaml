@@ -1,0 +1,12 @@
+compile:
+	dependencies:
+		- main.c
+	target: main.o
+	run: gca -c main.c -o main.o
+
+build:
+	dependencies:
+		- compile
+	target: main
+	run: gdc main.o -o main
+    
